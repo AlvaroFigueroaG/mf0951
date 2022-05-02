@@ -1,27 +1,15 @@
-<!-- Declaración del tipo de documento HTML, siempre en la 1ª línea -->
 <!DOCTYPE html>
-<!-- Elemento html. Atributos lenguaje y dirección de lectura -->
 <html lang="es" dir="ltr">
-<!-- Cabecera oculta del documento web que solo ven los robots -->
 
 <head>
-    <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
     <meta charset="utf-8" />
-    <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Compatibilidad con Microsoft Explorer -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Indéxame NO y sígueme NO -->
     <meta name="robots" content="noIndex, noFollow" />
-    <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
-    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303: Tratamiento de textos con CSS" />
-    <!-- Ruta al favicon -->
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1306 Pruebas de funcionalidades y optimización de páginas web" />
     <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
-    <!-- Ruta a las hojas de estilos -->
-    <link rel="stylesheet" href="../../assets/css/application.css" />
-
-    <!-- Título de la pestaña del navegador -->
-    <title>Imágenes CSS | UF1303</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+    <title>UF1306 | Pruebas de funcionalidades y optimización de páginas web</title>
 </head>
 
 <body>
@@ -47,13 +35,13 @@
                 </ul>
             </li>
             <li>
-                <a href="index.html">CSS</a>
+                <a href="#">CSS</a>
                 <ul>
                     <li>
                         <a href="textos.html">Textos</a>
                     </li>
                     <li>
-                        <a href="#">Imágenes</a>
+                        <a href="imagenes.html">Imágenes</a>
                     </li>
                     <li>
                         <a href="#">Vínculo 2.c</a>
@@ -68,66 +56,73 @@
             </li>
         </ul>
     </nav>
+
     <main>
         <section class="tema textos agua justify">
-            <header class="portada imagenes image-before">
-                <h2>Imágenes en CSS</h2>
+            <header class="portada" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/17/23/29/programming-1832991_960_720.png');">
+                <h2>Pruebas y optimización de páginas web</h2>
             </header>
-            <article>
-                <h3>Referencias teóricas</h3>
-                <p><strong>Referencias</strong>: </p>
+            <article class="article index">
+                <h3>Las tres capas del diseño web</h3>
+                <p>
+                    Los estándares Web fomentan la separación de un contenido Web en 3 capas:
+                </p>
                 <ul>
                     <li>
-                        <a href="../assets/pdf/UF1303_Elaboracion-hojas-de-estilo.pdf>">
-                            UF1303 - Elaboración de hojas de estilos
-                        </a>
+                        <strong>Contenido</strong>:
+                        <span>
+                            Define estructura semántica y contenido de texto plano, se representa con el documento HTML.
+                        </span>
                     </li>
                     <li>
-                        <a href="../assets/pdf/CSS_Manual_rapido.pdf>">
-                            Manual Rápido de CSS
-                        </a>
+                        <strong>Presentación</strong>:
+                        <span>
+                            Añade el aspecto del contenido, lo representa la hoja de estilo CSS
+                        </span>
                     </li>
                     <li>
-                        <a href="../assets/pdf/CSS_Guia_ref_rap.pdf>">
-                            Guía de referencia rápida CSS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/background-image">
-                            background-image | MDN Web Docs (moz://a)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://uniwebsidad.com/libros/css/capitulo-8">
-                            Introducción a CSS > Imágenes | uniwebsidad
-                        </a>
+                        <strong>Comportamiento</strong>:
+                        <span>
+                            Añade mayor grado de interacción y funciones complejas, es posible representarlo con un documento JS o de otras tecnologías semejantes
+                        </span>
                     </li>
                 </ul>
-            </article>
-            <article>
-                <h2>Imágenes en CSS</h2>
+                <figure class="img">
+                    <img src="assets/img/index_capas-disenho-web.jpeg" alt="Descripcion de las capas del desarrollo web" />
+                    <figcaption>
+                        Fig.1.- Capas del diseño web: Estructura, Contenido, Apariencia y Comportamiento
+                    </figcaption>
+                </figure>
                 <p>
-                    La propiedad background-image se emplea para establecer la imagen de fondo de cada elemento. La imagen se muestra en la zona que ocupan el contenido y el relleno del elemento, justo hasta su borde.
+                    Un documento html es un visualizador de la información.
                 </p>
                 <p>
-                    Para indicar la imagen que se muestra como fondo de un elemento, se utiliza una URL. Los navegadores no restringen el tipo de URL que se pueden utilizar, por lo que pueden ser URL externas/internas y URL relativas/absolutas.
+                    Para hacer más atractivo este documento html , podemos utilizar diversas posibilidades como: combinación de colores, distintos tipos de letras, fondo del documento, ubicación por coordenadas en píxeles de un determinado texto,
+                    etc. Todas esas posibilidades las tenemos en las hojas de estilo o Style Sheets. Las hojas de estilo son una extensión del documento HTML, en las que se diseña la apariencia general del mismo.
                 </p>
                 <p>
-                    La URL de la imagen que se quiere mostrar se incluye dentro de los paréntesis de la palabra url(). De forma opcional, el valor de la URL se puede encerrar entre comillas simples o entre comillas dobles.
+                    Las principales ventajas de utilizar las hojas de estilo son:
                 </p>
-                <p>
-                    Por defecto el CSS repite ( background-repeat ) la imagen de fondo ( background-image ) en todas las direcciones, tantas veces como fuera necesario, hasta cubrir completamente el elemento. Es exactamente lo que hacen los patrones.
-                    Si la imagen es más grande de lo necesario podemos utilizar la propiedad background-sizestar para establecer el tamaño de la imagen que se repite
-                </p>
-                <h3>Elementos SVG</h3>
-                <p>
-                    Si los elementos svg están guardados en documentos .svg externos podemos utilizarlos como imagen de fondo de la misma manera como lo hacemos con las imágenes jpg, png, gif:
-                </p>
-            </article>
-
-            <article class="imagen">
-                <h2>Ejemplos de imágenes con CSS</h2>
-                <p>Aplicando opacidad</p>
+                <ul>
+                    <li>
+                        <strong>Accesibilidad</strong>:
+                        <span>
+                            Los datos se pueden presentar en función del usuario y adaptarlos a sus necesidades. No es lo mismo presentar una web en un Pc, que presentarla en un teléfono móvil, o presentarla a personas con alguna discapacidad.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Mantenimiento</strong>:
+                        <span>
+                            Separa y centraliza la presentación, bien en diferentes archivos o en partes bien conocidas del archivo, con lo cual tenemos localizado el código que queremos mantener y/o actualizar
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Simplicidad</strong>:
+                        <span>
+                            Se obtienen documentos más fáciles de entender y se reduce el tamaño de los mismos.
+                        </span>
+                    </li>
+                </ul>
             </article>
         </section>
     </main>
