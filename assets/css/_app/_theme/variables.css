@@ -96,5 +96,8 @@
     */
 
     /* Categoría CSS, Página textos */
-    --img_css_textos: url('../../../img/nature-2813487_960_720.jpg');
+    --img_cat1_img1: url('../../../img/banner-1756639_960_720.jpg');
+
+    /* Categoría CSS, Página imagenes */
+    --img_cat1_img2: url('../../../img/nature-2813487_960_720.jpg');
 }
